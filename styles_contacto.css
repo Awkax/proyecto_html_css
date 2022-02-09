@@ -1,0 +1,114 @@
+/*-----------------section de la pagina contacto--------*/
+
+/*---texto---*/
+p {
+    font-size: 1.5rem;
+}
+
+/*---iframe mapa---*/
+#contacto iframe {
+    width: 100%;
+    height: 10rem;
+    margin: 3rem auto;
+}
+
+/*----iconos contacto----*/
+#contacto_iconos {
+    height: 44rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---cajas iconos---*/
+.c_iconos {
+    justify-content: space-around;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 10rem;
+    margin: 3rem auto;
+    background-color: var(--color-principal);
+    padding-top: 1.5rem;
+}
+
+.c_iconos:hover {
+    transform: scale(1.1);
+    transition-duration: 2s;
+}
+
+/*elementos iconos*/
+.elemento {
+    margin: auto;
+}
+
+.elemento h3 {
+    color: var(--color-principal-dos);
+    font-weight: 600;
+    text-align: center;
+}
+
+.elemento img {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 40%;
+    padding: .5rem
+}
+
+.elemento img:hover {
+    background-color: var(--color-secundario-dos);
+    border-radius: 20px;
+    border: 2px solid var(--color-principal-dos);
+}
+
+.c_ic_imagen img {
+    width: 5rem;
+}
+
+/*---enlace whatsapp---*/
+.whats {
+    margin: 1rem auto;
+    border-radius: 10px;
+    width: 7rem;
+    height: 4rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: #4ac96d;
+    border: 2px solid #059821;
+    color: #04390e;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.whats a {
+    color: black;
+}
+
+.whats img {
+    margin-top: .3rem;
+    width: 1.5rem;
+}
+
+.whats:hover {
+    background-color: #055f26;
+    transform: scale(1.1);
+    transition-duration: .5s;
+
+}
+
+.whats:hover a {
+    color: #1eb43a;
+}
+
+/*media*/
+@media (min-width: 760px) {
+    #contacto_iconos {
+        flex-direction: row;
+        height: 25rem;
+    }
+
+    .c_iconos {
+        width: 20rem;
+        height: 10rem;
+    }
+
+}

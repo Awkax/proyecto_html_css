@@ -1,0 +1,84 @@
+/*estilos general*/
+#servicios {
+    text-align: center;
+}
+
+/*texto*/
+#servicios p {
+    margin-top: 1rem;
+}
+
+.servicios_texto {
+    font-size: 1.5rem;
+    width: 50%;
+    margin: 3rem auto 0 auto;
+}
+
+/*cajas*/
+#capses {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.capsa {
+    margin: 2rem;
+    transition-duration: 2s;
+    display: flex;
+    align-items: center;
+}
+
+.capsa:hover {
+    transform: scale(1.05);
+}
+
+.capsa img {
+    width: 10rem;
+    margin: 1rem auto;
+}
+
+.capsa p {
+    width: 10rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
+    color: var(--color-principal-dos);
+    margin: auto;
+}
+
+/*boton*/
+.boton {
+    border: 2px solid var(--color-principal-dos);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 8rem;
+}
+
+.boton:hover {
+    background-color: var(--color-principal-dos);
+}
+
+/*fondo caja*/
+.capsa_fons {
+    background-color: var(--color-principal);
+    width: 15rem;
+    margin: auto;
+}
+
+/*--------medias----------*/
+@media (min-width: 520px) and (max-width: 840px) {
+    #capses {
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 840px) {
+    #capses {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,299 @@
+/*Esta página de css es la página de los estilos compartidos con todos los html, habrá que cargar este css en todos los html*/
+/*En otras páginas de css he utilizado grid y flexbox como método responsive porque me parecen mas cortos que los media*/
+
+/*estilos generales*/
+* {
+    --color-principal: #e8d4a2;
+    --color-secundario: #9d603b;
+    --color-principal-dos: #4f604f;
+    --color-secundario-dos: #97b197;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    font-weight: bold;
+    color: var(--color-principal-dos);
+}
+
+a:hover {
+    color: var(--color-secundario-dos);
+}
+
+h2 {
+    background-color: var(--color-principal-dos);
+    color: var(--color-principal);
+    width: 7rem;
+    padding: 1rem;
+    font-weight: 800;
+    font-style: italic;
+    margin: auto;
+}
+
+/*------------tooltips---------*/
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/*--------------------header-----------------------*/
+/*fondo header*/
+#cabecera {
+    background-attachment: scroll, fixed, fixed;
+    background-image: url(media/top.png), url(media/overlay.png), url(media/fondo_header_copia.jpg);
+    padding: 3em 0 5em 0;
+    background-size: 1600px 231px, auto, cover;
+    background-position: bottom center, top left, center center;
+    background-repeat: repeat-x, repeat, no-repeat;
+}
+
+/*icono*/
+.icono_index {
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--color-principal);
+    border-radius: 50%;
+    margin: auto;
+    transition-duration: 3s;
+}
+
+.icono_index img {
+    height: 3rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+.icono_index:hover {
+    transform: scale(1.2);
+}
+
+/*texto*/
+.texto_cab {
+    color: var(--color-principal);
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/*--------------------------------nav------------------------------------*/
+/*Breadcrums sacado de https://codepen.io/dp_lewis/pen/MWYgbOY*/
+.breadcrumbs {
+    border: 1px solid #cbd2d9;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.breadcrumbs__item {
+    background: #fff;
+    color: #333;
+    outline: none;
+    padding: 0.75em 0.75em 0.75em 1.25em;
+    position: relative;
+    text-decoration: none;
+    transition: background 0.2s linear;
+}
+
+.breadcrumbs__item:hover:after,
+.breadcrumbs__item:hover {
+    background: #edf1f5;
+}
+
+.breadcrumbs__item:focus:after,
+.breadcrumbs__item:focus,
+.breadcrumbs__item.is-active:focus {
+    background: var(--color-principal-dos);
+    color: #ffff;
+}
+
+.breadcrumbs__item:after,
+.breadcrumbs__item:before {
+    background: white;
+    bottom: 0;
+    clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transition: background 0.2s linear;
+    width: 1em;
+    z-index: 1;
+}
+
+.breadcrumbs__item:before {
+    background: var(--color-secundario-dos);
+    margin-left: 1px;
+}
+
+.breadcrumbs__item:last-child {
+    border-right: none;
+}
+
+.breadcrumbs__item.is-active {
+    background: #edf1f5;
+}
+
+/*--------------menu--------------- */
+.menu a {
+    text-decoration: none;
+}
+
+.menu {
+    display: inline-flex;
+    align-content: flex-end;
+    visibility: hidden;
+    list-style: none;
+    height: 1rem;
+    width: 100%;
+}
+
+.menu li {
+    float: left;
+    margin: auto 0.5rem;
+    padding: 0;
+    width: 7rem;
+}
+
+.menu li ul {
+    opacity: 0;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+.menu li:hover ul {
+    opacity: 1;
+    transition: 0.8s;
+}
+
+/*---------------------footer-----------------------*/
+/*Fondo de footer (id: pie) sacado de https://html5up.net/directive*/
+#pie {
+    background-attachment: scroll;
+    background-color: var(--color-principal);
+    background-image: url(media/bottom.png);
+    background-position: top center;
+    background-repeat: repeat-x;
+    color: var(--color-secundario);
+    padding: calc(460px + 1rem) 0 2em 0;
+}
+
+/*texto añadido al footer*/
+#pie p {
+    line-height: 2.5rem;
+    margin: 3rem 2rem 0 2rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#contacto_footer {
+    margin: 4rem 6rem;
+    display: grid;
+}
+
+/*--iconos footer--*/
+.icono {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    margin: 1rem auto;
+    background-color: #ffff;
+    transition-duration: 1s;
+}
+
+.icono:hover {
+    transform: scale(1.1);
+}
+
+.icono img {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: .7rem;
+}
+
+/*icono facebook*/
+.uno {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.uno:hover {
+    background-color: #3b5998;
+    transition-duration: 0.3s;
+}
+
+/*icono twitter*/
+.dos {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.dos:hover {
+    background: linear-gradient(#25d366, #25d366) 14% 84%/16% 16% no-repeat,
+        radial-gradient(#25d366 60%, transparent 0);
+    transition-duration: 0.3s;
+}
+
+/*icono instagram*/
+.tres {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.tres:hover {
+    background-color: #0072c6;
+    transition-duration: 0.3s;
+}
+
+/*animacion icono footer*/
+#contacto .icono:hover {
+    transform: scale(1.1);
+}
+
+/*----------medias----------*/
+@media (min-width: 500px) {
+    #pie p {
+        line-height: 2.5rem;
+        margin: 3rem 6rem 0 6rem;
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        visibility: visible;
+        justify-content: center;
+        margin: .5rem auto 4rem auto;
+    }
+}

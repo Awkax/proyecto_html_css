@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--iconos sacados de flaticon.es-->
+<!--imagenes de archivo sacadas de pixabay.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Página de una empresa de pintura y rehabilitación integral de fachadas.">
+    <meta name="keywords" content="pintura, fachadas, pintura de fachadas, reacondicionamiento, mallorca, trabajo vertical, pintura mallorca, fachadas mallorca, rehabilitación integral de fachadas">
+    <meta name="author" content="Lucila Azul Muñoz Gomez">
+    <meta name="robots" content="index,follow">
+    <title>Nosotros || Pinturas Manuel Muñoz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="icon" type="x-icon" href="media/imagen_icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,800&display=swap" rel="stylesheet">
+    <style>
+        #nosotros_img {
+            width: 100%;
+        }
+
+        @media (min-width: 480px) {
+            #nosotros {
+                display: grid;
+            }
+
+            #nosotros_img {
+                grid-column: 1/2;
+                margin: 3rem 0 0 5rem;
+                width: 60%;
+            }
+
+            #nosotros_texto {
+                grid-column: 2/2;
+                margin-right: 5rem;
+                line-height: 2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="cabecera">
+            <a href="index.html">
+                <div class="icono_index">
+                    <img src="media/imagen_icono.png" alt="rodillo">
+                </div>
+            </a>
+            <div class="texto_cab">
+                <h1>Pinturas Manuel Muñoz</h1>
+                <p>Rehabilitación integral de fachadas</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="serv.html">Servicios ▼</a>
+                <ul>
+                    <li><a href="trabver.html">Trabajo vertical</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="nosotros.html">Nosotros ▼</a>
+                <ul>
+                    <li><a href="origen.html">Orígenes</a></li>
+                </ul>
+            </li>
+            <li><a href="real.html">Trabajos realizados</a></li>
+        </ul>
+    </nav>
+    <aside class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__item">Inicio</a>
+        <a href="nosotros.html" class="breadcrumbs__item is-active">Nosotros</a>
+
+    </aside>
+    <section>
+        <div id="nosotros">
+            <img src="media/nosotros.jpeg" alt="nosotros" title="nosotros" id="nosotros_img">
+            <div id="nosotros_texto">
+                <h2>Nosotros</h2>
+                <p>El fundador de la empresa es Manuel Muñoz, quien cuenta con mas de 30 años de experiencia y formación en todo tipo de arreglos, está especializado en trabajos verticales. Contamos con más trabajadores con muchos años de experiencia también y formados en trabajo de altura.
+                    Los clientes están satisfechos y contentos con nuestro trabajo así que no dejan de recomendarnos a conocidos para otras obras. Así que si te gusta nuestro trabajo ¡no dejes de recomendarnos! Gracias por leer.</p>
+                <p>Si quieres saber más sobre los inicios de la empresa, haz click <a href="origen.html">AQUÍ</a> </p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="pie">
+            <p>Trabajos verticales Manuel Muñoz, todos los derechos reservados.
+                Para acceder al mapa del sitio web haga click <a href="mapa.html">aquí</a>.</p>
+            <div id="contacto_footer">
+                <div class="icono uno"><a href="https://www.facebook.com/manuel.munoz.186590"><img src="media/fb.png" alt="facebook" title="ir a facebook"></a></div>
+
+                <div class="icono dos"><a href="https://wa.me/34618212958"><img src="media/whats.png" alt="whatsapp" title="escribeme un whatsapp"></a></div>
+
+                <div class="icono tres"><a href="mailto:lagospinta@hotmail.com"><img src="media/email.png" alt="outlook" title="escribeme un email"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

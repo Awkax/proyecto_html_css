@@ -1,0 +1,222 @@
+/*---------------------section inicio------------------------*/
+h3 {
+    font-weight: 300;
+}
+
+/*Aquí botones hacia las otras páginas*/
+#contenido_principal {
+    display: flex;
+}
+
+/*tarjetas con enlaces hacia otras páginas en forma de paleta de colores*/
+.tarjetas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 50rem;
+    width: 20rem;
+    margin: 5rem auto;
+    padding-top: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.17) 0 54px 55px, rgba(0, 0, 0, 0.17) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+.tarjetas > p {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 1rem auto 0;
+}
+
+.tarjeta {
+    float: left;
+    height: 10rem;
+    width: 15rem;
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+
+/*título de las tarjetas*/
+.tarjeta_titulo {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+/*contenido de las tarjetas*/
+.tarjeta_texto {
+    font-weight: 100;
+
+}
+
+.ser {
+    background-color: #6b5e5c;
+    color: #362f2e;
+}
+
+.con {
+    background-color: #d1946c;
+    color: #5c3e2a;
+}
+
+.nos {
+    background-color: #ae9c94;
+    color: #574e4a;
+}
+
+.tra {
+    background-color: #a28e7e;
+    color: #4d433b;
+}
+
+/*-----gif----*/
+#gif {
+    margin: auto;
+    display: none;
+}
+
+#gif img {
+    margin: auto;
+    width: 50%;
+}
+
+/*-----------flecha----------------*/
+/*-------------flecha paleta de color de aquí https://codepen.io/JoshMac/pen/MaYEmJ--------------*/
+.flecha,
+.flecha:before {
+    position: absolute;
+    left: 50%;
+}
+
+.flecha {
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: 0 0 -4rem -1rem;
+    transform: rotate(315deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+    visibility: hidden;
+}
+
+.flecha:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+    }
+}
+
+/*-------mediaqueries---------*/
+@media (min-width: 500px) {
+    #gif {
+        display: contents;
+    }
+
+    #gif img {
+        width: 30%;
+        margin-top: 8rem;
+    }
+
+    .tarjetas {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        height: 23rem;
+        width: 33rem;
+        margin: auto;
+        padding-bottom: 4rem;
+    }
+
+    .tarjeta_titulo {
+        opacity: 0;
+    }
+
+    #contenido_principal {
+        height: 60rem;
+        flex-direction: column-reverse;
+    }
+
+    .flecha {
+        visibility: visible;
+        width: 20px;
+        height: 20px;
+    }
+
+    .tarjeta:hover {
+        transform: scale(1.05);
+        transition-duration: 0.5s;
+    }
+
+    .tarjeta:hover .tarjeta_titulo {
+        opacity: 0.7;
+        transition: 500ms;
+    }
+
+    .tarjeta:hover .tarjeta_texto {
+        display: none;
+    }
+
+}
+
+@media (min-width: 950px) {
+
+    #contenido_principal {
+        margin-top: 3rem;
+        flex-direction: row;
+        height: 30rem;
+    }
+
+    #gif img {
+        width: 30%;
+        margin: 3rem auto;
+    }
+
+    .tarjetas {
+        height: 20rem;
+        width: 40rem;
+        margin: auto;
+    }
+
+    .tarjeta {
+        height: 20rem;
+        width: 8rem;
+    }
+
+    .tarjeta_texto {
+        line-height: 25rem;
+    }
+
+    .tra .tarjeta_texto {
+        line-height: 23rem;
+    }
+
+    .tarjeta_titulo {
+        font-weight: bolder;
+        font-size: 1rem;
+    }
+
+    .flecha {
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--iconos sacados de flaticon.es-->
+<!--imagenes de archivo sacadas de pixabay.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Página de una empresa de pintura y rehabilitación integral de fachadas.">
+    <meta name="keywords" content="pintura, fachadas, pintura de fachadas, reacondicionamiento, mallorca, trabajo vertical, pintura mallorca, fachadas mallorca, rehabilitación integral de fachadas">
+    <meta name="author" content="Lucila Azul Muñoz Gomez">
+    <meta name="robots" content="index,follow">
+    <title>Trabajos realizados || Pinturas Manuel Muñoz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles_trabajos.css">
+    <link rel="icon" type="x-icon" href="media/imagen_icono.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="cabecera">
+            <a href="index.html">
+                <div class="icono_index">
+                    <img src="media/imagen_icono.png" alt="rodillo">
+                </div>
+            </a>
+            <div class="texto_cab">
+                <h1>Pinturas Manuel Muñoz</h1>
+                <p>Rehabilitación integral de fachadas</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li><a href="serv.html">Servicios ▼</a>
+                <ul>
+                    <li><a href="trabver.html">Trabajo vertical</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="nosotros.html">Nosotros ▼</a>
+                <ul>
+                    <li><a href="origen.html">Orígenes</a></li>
+                </ul>
+            </li>
+            <li><a href="real.html">Trabajos realizados</a></li>
+        </ul>
+    </nav>
+    <aside class="breadcrumbs">
+        <a href="index.html" class="breadcrumbs__item">Inicio</a>
+        <a href="real.html" class="breadcrumbs__item is-active">Trabajos realizados</a>
+    </aside>
+    <section>
+        <div id="trabajos_realizados">
+            <div id="trabajos_realizados_texto">
+                <h2>Trabajos realizados</h2>
+                <p>Estos son algunos de los trabajos que hemos estado realizando últimamente.</p>
+            </div>
+            <div id="trabajos_realizados_img">
+                <div id="fotos">
+                    <div id="primera_foto">
+                        <img src="media/trabajos8.jpeg" alt="trabajo realizado">
+                    </div>
+                    <div id="segunda_foto">
+                        <img src="media/trabajos2.jpg" alt="trabajo realizado">
+                    </div>
+                    <div id="tercera_foto">
+                        <img src="media/trabajos7.jpeg" alt="trabajo realizado">
+                    </div>
+                    <div id="cuarta_foto">
+                        <img src="media/trabajos6.jpeg" alt="trabajo realizado">
+                    </div>
+                    <div id="sexta_foto">
+                        <img src="media/trabajos3.jpg" alt="trabajo realizado">
+                    </div>
+                </div>
+
+                <!--carrousel de https://www.migueltroyano.com/css/carrusel-imagenes-html-css/-->
+                <div class="slide">
+                    <div class="slide-inner">
+                        <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+                        <div class="slide-item">
+                            <img src="media/trabajos1.jpeg">
+                        </div>
+                        <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                        <div class="slide-item">
+                            <img src="media/trabajos4.jpg">
+                        </div>
+                        <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                        <div class="slide-item">
+                            <img src="media/trabajos5.jpeg">
+                        </div>
+                        <label for="slide-3" class="slide-control prev control-1">‹</label>
+                        <label for="slide-2" class="slide-control next control-1">›</label>
+                        <label for="slide-1" class="slide-control prev control-2">‹</label>
+                        <label for="slide-3" class="slide-control next control-2">›</label>
+                        <label for="slide-2" class="slide-control prev control-3">‹</label>
+                        <label for="slide-1" class="slide-control next control-3">›</label>
+
+                        <ol class="slide-indicador">
+                            <li>
+                                <label for="slide-1" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-2" class="slide-circulo">•</label>
+                            </li>
+                            <li>
+                                <label for="slide-3" class="slide-circulo">•</label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="pie">
+            <p>Trabajos verticales Manuel Muñoz, todos los derechos reservados.
+                Para acceder al mapa del sitio web haga click <a href="mapa.html">aquí</a>.</p>
+            <div id="contacto_footer">
+                <div class="icono uno"><a href="https://www.facebook.com/manuel.munoz.186590"><img src="media/fb.png" alt="facebook" title="ir a facebook"></a></div>
+
+                <div class="icono dos"><a href="https://wa.me/34618212958"><img src="media/whats.png" alt="whatsapp" title="escribeme un whatsapp"></a></div>
+
+                <div class="icono tres"><a href="mailto:lagospinta@hotmail.com"><img src="media/email.png" alt="outlook" title="escribeme un email"></a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
