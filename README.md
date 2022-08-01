@@ -7,7 +7,7 @@ De momento no se plantea nada más que una web informativa para que los clientes
 
 He decidido hacer el código desde cero para que la empresa pueda ver y jactarse de mis dotes de programación, ya que es de mi padre.
 
-Como desarrolladora he realizado un boceto:
+Como desarrollador he realizado un boceto:
 -Una cabecera
 -Un menú con enlaces a las otras páginas
 -Breadcrums
